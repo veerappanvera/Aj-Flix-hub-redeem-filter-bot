@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', '')
-API_ID = int(environ.get('API_ID', '28814392'))
-API_HASH = environ.get('API_HASH', '38d09c28822aa20a56c43c4b492efba6')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7494380710:AAH6zOaS3KmyMVcvFYwGgrDhxlakq54yy9I")
+API_ID = int(environ.get('API_ID', '27680588'))
+API_HASH = environ.get('API_HASH', '0a79f436cffd8873d38d363274f6c27e')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7605353897:AAHgs8KO7RekZLuwirR-T2q6IwI86MjFYws")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -33,7 +33,7 @@ REFER_PICS = (environ.get("REFER_PICS", "https://graph.org/file/1a2e64aee3d4d10e
 STREAM_SITE = (environ.get('STREAM_SITE', '')) # not support
 STREAM_API = (environ.get('STREAM_API', ''))
 STREAMHTO = (environ.get('STREAMHTO', ''))
-BOT_USERNAME = environ.get("BOT_USERNAME", "Aj_Flix_Hub_Auto_Filter_bot")
+BOT_USERNAME = environ.get("BOT_USERNAME", "Jsjsjsjjshshshbsbbot")
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7228509851').split()]
@@ -45,8 +45,8 @@ auth_channel = environ.get('AUTH_CHANNEL', '-1002175334495') #Channel / Group Id
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002191020088') # support group id ( make sure bot is admin )
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002206975192') # request channel id ( make sure bot is admin )
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '') # support group id ( make sure bot is admin )
+reqst_channel = environ.get('REQST_CHANNEL_ID', '') # request channel id ( make sure bot is admin )
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
